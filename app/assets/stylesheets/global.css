@@ -1,0 +1,46 @@
+.welcome {
+
+font-family:"Times New Roman", Times, serif;
+
+color:#F08080;
+
+background-color:white;
+
+padding-left:15px;
+
+border-style:inset;
+
+border-color:#C0C0C0;
+
+top:0px;
+
+left:0px;
+
+}
+
+.picture{
+
+top:50px;
+
+left:50px;
+
+}
+
+a#firstLink:link{
+
+}
+
+.navBottom{
+
+  padding: .75em;
+
+  border: .15em solid rgba(0, 0, 0, .8);
+
+  background-color: rgba(0, 0, 0, .7);
+
+  /*not sure what this next line does*/
+
+  color: rgba(255, 255, 255, .6);
+
+}
+
