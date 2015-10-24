@@ -1,18 +1,17 @@
 <h1>Search by</h1>
 <h3>Interests</h3>
-<form action="/results" method="GET">
-	<select name="interests">
-		<% @interests.each do |interest| %>
-		<option><%=interest%></option>
-		<% end %>
-	</select>
+<%= form_tag("/travellers/results", method: "post") do %>
+	<% @interests.each do |interest| %>
+		<%= check_box_tag(:interests, interest) %>
+		<%= label_tag(:interests, interest) %> <br>
+	<% end %>
 	<h3>Locations</h3>
-	<select name="locations">
-		<% @locations.each do |location| %>
-		<option><%=location%></option>
-		<% end %>
-	</select></br>
-	<input name="startDate" placeholder="Start Date"></input>
-	<input name="endDate" placeholder="End Date"></input>
-	<button>Submit</buttom>
-</form>
+	<% @locations.each do |location| %>
+		<%= check_box_tag(:locations, location) %>
+		<%= label_tag(:locations, location) %> <br>
+	<% end %>
+	<h3>Dates</h3>
+	<%= date_field(:startDate, "Start Date") %>
+	<%= date_field(:endDate, "End Date") %>
+	<%= submit_tag("Search") %>
+<% end %>
