@@ -11,7 +11,7 @@ class ExpertsController < ApplicationController
 
 	private
 	def expert_params
-		params.require(:expert).permit(:name, :description, :avaliability, :location)
+		params.require(:expert).permit(:name, :description, :startDate, :endDate, :location)
 	end
 
 end

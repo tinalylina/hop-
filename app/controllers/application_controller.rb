@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   	if resource.class == Expert
 	  	experts_path
 	  else
-	  	root_path
+	  	travellers_path
 	  end
   end
 end

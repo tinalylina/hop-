@@ -1,3 +1,4 @@
+=link_to "sign out", destroy_user_session_path, method: :delete
 %h2 hello expert
 = form_for @expert do |f|
 	= f.label :name
@@ -5,7 +6,8 @@
 	%p Description
 	= f.text_area	:description, placeholder:"Describe yourself"
 	%p availability
-	= f.text_field :avaliability, placeholder:"monday, friday"
+	= f.date_field :startDate
+	= f.date_field :endDate
 	%p location
 	= f.text_field :location, placeholder:"city/country"
 
