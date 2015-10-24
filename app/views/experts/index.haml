@@ -1,0 +1,13 @@
+%h2 hello expert
+= form_for @expert do |f|
+	= f.label :name
+	= f.text_field :name, placeholder: "Full Name"
+	%p Description
+	= f.text_area	:description, placeholder:"Describe yourself"
+	%p availability
+	= f.text_field :avaliability, placeholder:"monday, friday"
+	%p location
+	= f.text_field :location, placeholder:"city/country"
+
+	= f.submit "Update"
+
