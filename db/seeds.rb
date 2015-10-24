@@ -3,6 +3,6 @@
 #
 # Examples:
 #
-	Expert.create(name: "Tina", description: "I love Budapest", location: "budapest", interests: "[sangria, pinot noir]", availability: [])
+	Expert.create(name: "Tina", description: "I love Budapest", location: "budapest", interests: "[sangria, pinot noir]", startDate: 11/01/2015, endDate: 11/05/2015)
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
